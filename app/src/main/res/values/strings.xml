@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Happy_Practica_4</string>
+
+    <string name="edt_nombre">Nombre del Contacto</string>
+    <string name="edt_telefono">Teléfono</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="item_nombre">Nombre del Contacto</string>
+    <string name="item_telefono">Teléfono</string>
+
+
+</resources>

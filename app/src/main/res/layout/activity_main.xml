@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbead0"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:background="#f4cfb4"
+        android:ems="10"
+        android:hint="@string/edt_nombre"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:background="#f4cfb4"
+        android:ems="10"
+        android:hint="@string/edt_telefono"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toStartOf="@+id/btn_agregar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombre" />
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="106dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#e85854"
+        android:text="@string/btn_agregar"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toTopOf="@+id/_dynamic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:ignore="UnknownId" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="61dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginTop="42dp"
+        android:textOff="M"
+        android:textOn="F"
+        android:checked="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_nombre"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ListView
+        android:id="@+id/lv_contactos"
+        android:layout_width="361dp"
+        android:layout_height="348dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar"
+        app:layout_constraintVertical_bias="0.647" />
+</android.support.constraint.ConstraintLayout>
