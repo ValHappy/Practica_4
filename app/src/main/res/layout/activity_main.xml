@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#fbead0"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
 
     <EditText
         android:id="@+id/edt_nombre"
@@ -20,11 +19,17 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="#ffff"
-        app:layout_constraintEnd_toStartOf="@+id/switch1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
         />
+
+    <Switch
+        android:id="@+id/swt_sexo"
+        android:layout_width="103dp"
+        android:layout_height="22dp"
+        android:layout_gravity="right"
+        android:checked="false"
+        android:text="Genero: "
+        android:textOff="M"
+        android:textOn="F" />
 
     <EditText
         android:id="@+id/edt_telefono"
@@ -39,9 +44,7 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="#ffff"
-        app:layout_constraintEnd_toStartOf="@+id/btn_agregar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_nombre" />
+        />
 
     <Button
         android:id="@+id/btn_agregar"
@@ -53,27 +56,7 @@
         android:background="#e85854"
         android:text="@string/btn_agregar"
         android:textColor="#ffff"
-        app:layout_constraintBottom_toTopOf="@+id/_dynamic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/edt_telefono"
-        app:layout_constraintTop_toBottomOf="@+id/switch1"
-        tools:ignore="UnknownId" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="61dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="21dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginTop="42dp"
-        android:textOff="M"
-        android:textOn="F"
-        android:checked="false"
-        app:layout_constraintBottom_toTopOf="@+id/btn_agregar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/edt_nombre"
-        app:layout_constraintTop_toTopOf="parent"
-
+        android:layout_gravity="right"
         />
 
     <ListView
@@ -82,9 +65,5 @@
         android:layout_height="348dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_agregar"
-        app:layout_constraintVertical_bias="0.647" />
-</android.support.constraint.ConstraintLayout>
+        />
+</LinearLayout>
