@@ -21,6 +21,8 @@
         android:textColor="#ffff"
         />
 
+
+
     <Switch
         android:id="@+id/swt_sexo"
         android:layout_width="103dp"
