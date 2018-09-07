@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -55,12 +56,14 @@ public class ContactoAdapter extends BaseAdapter{
         ImageButton item_call = linea.findViewById(R.id.item_call);
         ImageButton item_delete = linea.findViewById(R.id.item_delete);
 
+        ImageView item_sexo = linea.findViewById(R.id.item_sexo);
+
         String sexo = contactos.get(position).getSexo();
 
         if (sexo.toString().equals("Femenino")){
-            //item_sexo.getImageResourse(R.drawable.femenino);
+            item_sexo.setImageResource(R.drawable.femenino);
         }else{
-            //item_sexo.getImageResourse(R.drawable.masculino);
+            item_sexo.setImageResource(R.drawable.masculino);
         }
 
         item_nombre.setText(contactos.get(position).getNombre());

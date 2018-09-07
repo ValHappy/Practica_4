@@ -40,12 +40,14 @@ public class MainActivity extends AppCompatActivity {
         lv_contactos.setAdapter(customeAdapter);
 
         Contacto contacto1 = new Contacto("Tays", "3043719084", "Femenino");
-        Contacto contacto2 = new Contacto("wapa", "3115529404", "Femenino");
-        Contacto contacto3 = new Contacto("Calex", "3013519245", "Masculino");
+        Contacto contacto2 = new Contacto("Nathan", "3128489423", "Masculino");
+        Contacto contacto3 = new Contacto("Pau wapa", "3115529404", "Femenino");
+        Contacto contacto4 = new Contacto("Calex", "3013519245", "Masculino");
 
         customeAdapter.agregarContacto(contacto1);
         customeAdapter.agregarContacto(contacto2);
         customeAdapter.agregarContacto(contacto3);
+        customeAdapter.agregarContacto(contacto4);
 
         lv_contactos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

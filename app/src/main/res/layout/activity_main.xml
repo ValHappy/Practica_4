@@ -5,67 +5,84 @@
     android:background="#fbead0"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
 
-    <EditText
-        android:id="@+id/edt_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="34dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="31dp"
-        android:background="#f4cfb4"
-        android:ems="10"
-        android:hint="@string/edt_nombre"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:textColor="#ffff"
-        />
+        <EditText
+            android:id="@+id/edt_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="#f4cfb4"
+            android:ems="10"
+            android:hint="@string/edt_nombre"
+            android:padding="10dp"
+            android:textColor="#ffff"
+            />
+
+        <Switch
+            android:id="@+id/swt_sexo"
+            android:layout_width="103dp"
+            android:layout_height="22dp"
+            android:checked="false"
+            android:text="Genero: "
+            android:textOff="M"
+            android:textOn="F"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
 
-    <Switch
-        android:id="@+id/swt_sexo"
-        android:layout_width="103dp"
-        android:layout_height="22dp"
-        android:layout_gravity="right"
-        android:checked="false"
-        android:text="Genero: "
-        android:textOff="M"
-        android:textOn="F" />
+            <EditText
+                android:id="@+id/edt_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:background="#f4cfb4"
+                android:ems="10"
+                android:hint="@string/edt_telefono"
+                android:padding="10dp"
+                android:textColor="#ffff"
+                />
 
-    <EditText
-        android:id="@+id/edt_telefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="11dp"
-        android:background="#f4cfb4"
-        android:ems="10"
-        android:hint="@string/edt_telefono"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:textColor="#ffff"
-        />
+            <Button
+                android:id="@+id/btn_agregar"
+                android:layout_width="110dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="10dp"
+                android:background="#e85854"
+                android:text="@string/btn_agregar"
+                android:textColor="#ffff"
+                />
 
-    <Button
-        android:id="@+id/btn_agregar"
-        android:layout_width="106dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="24dp"
-        android:background="#e85854"
-        android:text="@string/btn_agregar"
-        android:textColor="#ffff"
-        android:layout_gravity="right"
-        />
+    </LinearLayout>
+
 
     <ListView
         android:id="@+id/lv_contactos"
         android:layout_width="361dp"
-        android:layout_height="348dp"
+        android:layout_height="380dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         />
+        
+        
 </LinearLayout>
